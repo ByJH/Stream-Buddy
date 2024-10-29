@@ -2,17 +2,13 @@
  *	Style sheet for Stream Buddy
  */
 
-/* You are now logged out */
+/* Top header */
 h3{
     font-family: arial; 
-	  text-align: center;
+	text-align: center;
 }
-/* Thank you come again */
-h4{
-    font-family: arial;
-	  text-align: center;
-}
-/* login link */
+
+/* options */
 p{
     font-family: arial;
 	  text-align: center;
