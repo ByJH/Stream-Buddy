@@ -1,17 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-    </main>
-    <script src="index.js"></script>
-  </body>
+    <title>Media Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .accent-background {
+            background: linear-gradient(135deg, #007BFF 50%, #6c757d 50%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            background-color: white;
+            border-radius: 10px;
+            padding: 50px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 15px;
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
+
+        .button-container a.logout {
+            background-color: #dc3545;
+        }
+
+        .button-container a.logout:hover {
+            background-color: #c82333;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: #6c757d;
+            color: white;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="accent-background">
+    
+        <div class="content">
+            <h1>Welcome to Stream Buddy</h1>
+
+            <div class="button-container">
+                <a href="profile.html">View Profile</a>
+                <a href="review-media.html">Review Media</a>
+                <a href="create-list.html">Create Custom List</a>
+                <a href="view-ratings.html">View Media Ratings</a>
+                <a href="logout.html" class="logout">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Stream Buddy. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
