@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom Lists | Stream-Buddy</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <img src="../images/logo.png" alt="Stream-Buddy Logo" class="logo">
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Profile.html">Profile</a>
+            <a href="Admin.html">Admin</a>
+            <a href="Login.html" class="logout">Logout</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Custom Media Lists</h1>
+            <p>Organize, track, and share your favorite movies and shows!</p>
+            <button onclick="createNewList()" class="hero-button">Create New List</button>
+        </div>
+        <div class="hero-image">
+            <img src="../images/hero-image.jpg" alt="Custom List Example">
+        </div>
+    </section>
+
+    <main>
+        <section class="list-section">
+            <h2>Your Lists</h2>
+
+            <div class="list">
+                <h3>Sample List</h3>
+                <p>Genre: Horror</p>
+                <div class="list-actions">
+                    <button onclick="editList()">Edit</button>
+                    <button onclick="deleteList()">Delete</button>
+                </div>
+            </div>
+
+            <div class="list">
+                <h3>Watch Later</h3>
+                <p>Genre: Sci-Fi</p>
+                <div class="list-actions">
+                    <button onclick="editList()">Edit</button>
+                    <button onclick="deleteList()">Delete</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
+
