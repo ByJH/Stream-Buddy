@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .accent-background {
+            background: linear-gradient(135deg, #343a40 50%, #007BFF 50%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            background-color: white;
+            border-radius: 10px;
+            padding: 50px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #007BFF;
+            text-align: center;
+        }
+
+        .button-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
+
+        .form-container {
+            margin: 30px 0;
+        }
+
+        .form-container form {
+            margin: 10px 0;
+        }
+
+        input[type="text"], input[type="submit"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .btn-edit {
+            background-color: #ffc107;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .btn-delete {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="accent-background">
+        <div class="content">
+            <h1>Admin Dashboard</h1>
+            <div class="form-container">
+                <h3>Search Users</h3>
+                <form action="search-users.html" method="get">
+                    <input type="text" name="search-users" placeholder="Search by username, email, or ID">
+                    <input type="submit" value="Search">
+                </form>
+
+                <h3>Search Reviews</h3>
+                <form action="search-reviews.html" method="get">
+                    <input type="text" name="search-reviews" placeholder="Search by media title or review ID">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+            <div class="form-container">
+                <h3>Add New User</h3>
+                <form action="add-user.html" method="post">
+                    <input type="text" name="add-user" placeholder="Enter new username">
+                    <input type="submit" value="Add User">
+                </form>
+
+                <h3>Add New Review</h3>
+                <form action="add-review.html" method="post">
+                    <input type="text" name="add-review" placeholder="Enter media title">
+                    <input type="submit" value="Add Review">
+                </form>
+            </div>
+            <div class="form-container">
+                <h3>Users</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>johndoe</td>
+                            <td>johndoe@example.com</td>
+                            <td>
+                                <button class="btn-edit">Edit</button>
+                                <button class="btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Reviews</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Review ID</th>
+                            <th>Media Title</th>
+                            <th>Review Text</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>The Matrix</td>
+                            <td>Good movie...</td>
+                            <td>
+                                <button class="btn-edit">Edit</button>
+                                <button class="btn-delete">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Stream Buddy. Admin Panel.</p>
+    </footer>
+
+</body>
+</html>
