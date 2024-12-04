@@ -1,0 +1,34 @@
+/*
+ *	Style sheet for Stream Buddy logout page
+ */
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.logout-message {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logout-message h4 {
+    font-size: 24px;
+    color: #333;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Shop</title>
+    <link rel="stylesheet" href="../styles/MediaView.css">
+</head>
+<body>
+    <header>
+        <div class="logo">☰</div>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="CustomList.html">myList</a>
+            <a href="Review.html">Review</a>
+            <a href="Profile.html">Profile</a>
+            <button class="sign-in">Sign in</button>
+            <button class="register">Register</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="filter-group">
+                <h4>Keywords</h4>
+                <div class="keywords">
+                    <span class="keyword">Spring</span>
+                    <span class="keyword">Smart</span>
+                    <span class="keyword">Modern</span>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h4>Rating</h4>
+                <input type="range" min="1" max="5">
+            </div>
+
+            <div class="filter-group">
+                <h4>Genre</h4>
+                <div class="checkbox"><input type="checkbox"> Label</div>
+                <div class="checkbox"><input type="checkbox"> Label</div>
+                <div class="checkbox"><input type="checkbox"> Label</div>
+            </div>
+
+            <div class="filter-group">
+                <h4>Size</h4>
+                <div class="checkbox"><input type="checkbox"> Label</div>
+                <div class="checkbox"><input type="checkbox"> Label</div>
+                <div class="checkbox"><input type="checkbox"> Label</div>
+            </div>
+        </aside>
+
+        <main>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button>Search</button>
+            </div>
+
+            <div class="tags">
+                <button class="tag selected">New</button>
+                <button class="tag">Trending</button>
+                <button class="tag">Coming Soon</button>
+                <button class="tag">Seasonal</button>
+            </div>
+
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <div class="thumbnail"></div>
+                    <div class="details">
+                        <p class="movie-name">Movie Name</p>
+                        <p class="genre">Genre</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="thumbnail"></div>
+                    <div class="details">
+                        <p class="movie-name">Movie Name</p>
+                        <p class="genre">Genre</p>
+                    </div>
+                </div>
+                <div class="movie-grid">
+                    <div class="movie-card">
+                        <div class="thumbnail"></div>
+                        <div class="details">
+                            <p class="movie-name">Movie Name</p>
+                            <p class="genre">Genre</p>
+                        </div>
+                    </div>
+                    
+            </div>
+        </main>
+    </div>
+</body>
+</html>

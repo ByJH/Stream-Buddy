@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="../styles/review.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="menu-icon">&#9776;</span>
+        </div>
+        <div class="nav-right">
+            <a href="Home.html">Home</a>
+            <a href="CustomList.html">MyList</a>
+            <a href="MediaView.html">Media</a>
+            <a href="Profile.html">Profile</a>
+        </div>
+    </nav>
+
+    <!-- Centered UI Box for Review Section -->
+    <div class="container">
+        <div class="review-box">
+            <h1>Movie Reviews</h1>
+            <button class="add-review-btn" onclick="toggleForm()">Add Review</button>
+            <div class="reviews">
+                <!-- Example Review -->
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h2>Review Title</h2>
+                    <p>This is the review body text.</p>
+                    <div class="reviewer-info">
+                        <img src="https://via.placeholder.com/30" alt="Reviewer Avatar" class="avatar">
+                        <span class="reviewer-name">Reviewer Name</span>
+                        <span class="review-date">Date</span>
+                    </div>
+                </div>
+                <!-- Additional reviews will appear here -->
+            </div>
+
+            <!-- Review Form (Initially Hidden) -->
+            <div id="reviewForm" class="review-form" style="display: none;">
+                <h2>Add a New Review</h2>
+                <form>
+                    <label for="reviewTitle">Movie Name:</label>
+                    <input type="text" id="reviewTitle" required>
+                    <label for="reviewBody">Review:</label>
+                    <textarea id="reviewBody" required></textarea>
+                    <label for="reviewRating">Rating (1-5)</label>
+                    <textarea id="reviewBody" required></textarea>
+                    <button type="submit">Submit Review</button>
+                    <button type="button" onclick="toggleForm()">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/review.js"></script>
+</body>
+</html>

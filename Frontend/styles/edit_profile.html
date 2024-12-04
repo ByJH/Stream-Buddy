@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Stream-Buddy</title>
+    <!--<link rel="stylesheet" href="../styles/style.css">-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <img src="../images/logo.png" alt="Stream-Buddy Logo" class="logo">
+        <nav class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="CustomList.html">My Lists</a>
+            <a href="Admin.html">Admin</a>
+            <a href="Login.html" class="logout">Logout</a>
+        </nav>
+    </header>
+
+    <div class="profile-container">
+        <aside class="profile-sidebar">
+            <nav class="profile-nav">
+                <a href="#">Settings</a>
+                <a href="#">Personal Information</a>
+                <a href="#">Notifications</a>
+                <a href="#">Edit Profile</a>
+            </nav>
+        </aside>
+
+        <main class="profile-main">
+            <section class="profile-info-box">
+                <h2> Edit Profile Information</h2>
+                <div class="profile-details">
+                    <p><strong>Username:</strong> UserName</p>
+                    <p><label for="newUser">New Username:</label>
+                    <input type="text" id="newUser" name="newUser" required></p>
+                    <p><strong>Email:</strong> testing@example.com</p>
+                    <p><label for="newEmail">Update Email:</label>
+                    <input type="text" id="newEmail" name="newEmail" required></p>
+                    <p><strong>Member Since:</strong> October 2024</p>
+                    <p><button type="submit">Submit</button>
+                    <button type="cancel">Cancel</button></p>
+                </div>
+            </section>
+        </main>
+
+        <aside class="reviews-section">
+            <h2>My Reviews</h2>
+            <div class="review-item">
+                <h3>Inception</h3>
+                <p>Rating: 9/10</p>
+                <p>"Amazing plot"</p>
+            </div>
+            <div class="review-item">
+                <h3>The Dark Knight</h3>
+                <p>Rating: 10/10</p>
+                <p>"Perfect movie"</p>
+            </div>
+        </aside>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
