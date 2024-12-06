@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom Lists | Stream-Buddy</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <img src="../images/logo.png" alt="Stream-Buddy Logo" class="logo">
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Profile.html">Profile</a>
+            <a href="Admin.html">Admin</a>
+            <a href="Login.html" class="logout">Logout</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Custom Media Lists</h1>
+            <p>Organize, track, and share your favorite movies and shows!</p>
+            <button onclick="openCreateListModal()" class="hero-button">Create New List</button>
+        </div>
+        <div class="hero-image">
+            <img src="../images/hero-image.jpg" alt="Custom List Example">
+        </div>
+    </section>
+
+    <main>
+        <section class="list-section">
+            <h2>Your Lists</h2>
+            <div class="lists-container">
+                <div id="userLists">
+                    <div class="list empty-list">
+                        <div class="list-content">
+                            <h3>Create a New List</h3>
+                            <p>Click the button above to get started</p>
+                        </div>
+                    </div>
+                    <div class="list empty-list">
+                        <div class="list-content">
+                            <h3>Create a New List</h3>
+                            <p>Click the button above to get started</p>
+                        </div>
+                    </div>
+                    <div class="list empty-list">
+                        <div class="list-content">
+                            <h3>Create a New List</h3>
+                            <p>Click the button above to get started</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="createListModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeCreateListModal()">&times;</span>
+            <h2>Create New List</h2>
+            <form id="createListForm">
+                <div class="form-group">
+                    <label for="listName">List Name:</label>
+                    <input type="text" id="listName" name="listName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Filter by Genre:</label>
+                    <select id="genreFilter" onchange="filterMediaByGenre()">
+                        <option value="">All Genres</option>
+                        <option value="Action">Action</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                    </select>
+                </div>
+
+                <div class="media-selection">
+                    <h3>Select Media:</h3>
+                    <div id="mediaList" class="media-grid"></div>
+                </div>
+
+                <button type="submit" class="save-button">Create List</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

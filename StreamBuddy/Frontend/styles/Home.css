@@ -1,0 +1,75 @@
+/* Admin.css */
+
+/* Set the background image and properties for the entire page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/hero-image.jpg'); /* Replace with the correct path */
+    background-size: cover; /* Ensures the background image covers the entire page */
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Accent background section */
+.accent-background {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay for better readability */
+    padding: 20px;
+    height: 100vh; /* Makes the background cover the full height of the viewport */
+}
+
+/* Center content and style the heading */
+.content {
+    text-align: center;
+    color: #fff; /* White text */
+}
+
+/* Style for the main heading */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Styling the button container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Style for each button */
+.button-container a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007BFF; /* Blue color */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.button-container a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling the logout button to make it stand out */
+.logout {
+    background-color: #dc3545; /* Red color for logout */
+}
+
+.logout:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

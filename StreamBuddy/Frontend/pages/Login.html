@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/login_styles.css">  <!-- Correct path to the CSS -->
+</head>
+<body>
+    <div class="header">
+        <img src="../images/StreamBuddyLogo.png" alt="Company Logo" class="logo">
+    </div>
+    <div class="login-container">
+        <h1>Login</h1>
+        <!-- Add id="loginForm" to ensure JS can access the form -->
+        <form id="loginForm" method="POST">
+            <div class="input-group">
+                <label for="login">Username or Email</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <!-- Error message container -->
+        <div id="error-message" style="color: red;"></div>
+        <!-- Sign Up Button -->
+        <div class="signup-container">
+            <p>Don't have an account?</p>
+            <a href="SignUp.html"><button type="button">Sign Up</button></a>
+        </div>
+    </div>
+    <script src="../scripts/login_script.js"></script> <!-- Link to the JS -->
+</body>
+</html>

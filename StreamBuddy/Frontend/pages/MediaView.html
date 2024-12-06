@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Shop</title>
+    <link rel="stylesheet" href="../styles/MediaView.css">
+    <script defer src="../scripts/mediaView.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">?</div>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="CustomList.html">My List</a>
+            <a href="Review.html">Review</a>
+            <a href="Profile.html">Profile</a>
+            <a href="Logout.html">LogOut</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <!-- Filters Section -->
+            <div class="filter-group">
+                <h4>Keywords</h4>
+                <div class="keywords">
+                    <span class="keyword">Adventure</span>
+                    <span class="keyword">Romance</span>
+                    <span class="keyword">Comedy</span>
+                    <span class="keyword">Drama</span>
+                    <span class="keyword">Thriller</span>
+                </div>
+            </div>
+
+            <!-- Rating Slider -->
+            <div class="filter-group">
+                <h4>Rating</h4>
+                <input type="range" min="1" max="5" step="1" id="ratingRange">
+                <span id="ratingValue">5</span>
+            </div>
+
+            <!-- Genre Filters -->
+            <div class="filter-group">
+                <h4>Genre</h4>
+                <div class="checkbox"><input type="checkbox" value="Action" id="actionGenre"> Action</div>
+                <div class="checkbox"><input type="checkbox" value="Drama" id="dramaGenre"> Drama</div>
+                <div class="checkbox"><input type="checkbox" value="Comedy" id="comedyGenre"> Comedy</div>
+            </div>
+
+            <!-- Release Year Filter -->
+            <div class="filter-group">
+                <h4>Release Year</h4>
+                <input type="number" id="maxYear" placeholder="To (e.g., 2024)">
+            </div>
+
+            <!-- Streaming Platform Filters -->
+            <div class="filter-group">
+                <h4>Streaming Platforms</h4>
+                <div class="checkbox"><input type="checkbox" value="Netflix" id="Netflix"> Netflix</div>
+                <div class="checkbox"><input type="checkbox" value="Hulu" id="Hulu"> Hulu</div>
+                <div class="checkbox"><input type="checkbox" value="Disney+" id="Disney+"> Disney+</div>
+                <div class="checkbox"><input type="checkbox" value="HBO Max" id="HBO Max"> HBO Max</div>
+                <div class="checkbox"><input type="checkbox" value="Paramount+" id="Paramount+"> Paramount+</div>
+            </div>
+        </aside>
+
+        <main>
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search">
+                <button id="searchButton">Search</button>
+            </div>
+
+            <!-- Category Tags -->
+            <div class="tags">
+                <button class="tag selected" id="allTag">All</button>
+                <button class="tag" id="newTag">New</button>
+                <button class="tag" id="trendingTag">Trending</button>
+                <button class="tag" id="comingSoonTag">Coming Soon</button>
+                <button class="tag" id="seasonalTag">Seasonal</button>
+            </div>
+
+            <!-- Movie Grid -->
+            <div class="movie-grid">
+                <!-- Movies will be dynamically loaded here -->
+            </div>
+
+            <!-- Modal for Movie Details -->
+            <div id="movieDetailsModal" class="modal" style="display:none;">
+                <div class="modal-content">
+                    <span class="close-btn" id="closeModal">&times;</span>
+                    <img id="movieImage" class="movie-image" alt="Movie Image">
+                    <div class="movie-info">
+                        <h2 id="movieTitle"></h2>
+                        <p><strong>Release Date:</strong> <span id="movieReleaseDate"></span></p>
+                        <p><strong>Genre:</strong> <span id="movieGenre"></span></p>
+                        <p><strong>Description:</strong></p>
+                        <p id="movieDescription"></p>
+                        <p><strong>Streaming Platform:</strong> <span id="moviePlatform"></span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
